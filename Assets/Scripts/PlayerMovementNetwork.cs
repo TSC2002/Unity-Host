@@ -6,6 +6,8 @@ using Unity.Netcode;
 public class PlayerMovementNetwork : NetworkBehaviour
 {
     [SerializeField] float MoveSpeed = 3f;
+    [SerializeField] private Transform Sphere;
+    private Transform SphereObject;
 
     private void Update()
     {
@@ -23,12 +25,24 @@ public class PlayerMovementNetwork : NetworkBehaviour
             TestServerRpc();
         }
 
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            TestServerRpc();
+        }
+
         transform.Translate(MoverDireccion * MoveSpeed * Time.deltaTime);
     }
 
     [ServerRpc]
     private void TestServerRpc()
     {
-        Debug.Log("Test Server RPC");
+        Sphere = Instantiate(Sphere, transform.position, Quaternion.identity);
+        Sphere.GetComponent<NetworkObject>().Spawn(true);
+    }
+
+    [ClientRpc]
+    private void TestClientRpc()
+    {
+        Debug.Log("Test Client RPC");
     }
 }
