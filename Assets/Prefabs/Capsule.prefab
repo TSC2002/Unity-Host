@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4831303724150768917}
   - component: {fileID: 4831303724150768916}
   - component: {fileID: 4334297100360095166}
-  - component: {fileID: 2348555643583520211}
+  - component: {fileID: 6976085557012315465}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -125,8 +125,8 @@ MonoBehaviour:
   GlobalObjectIdHash: 2016943738
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
-  ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 1
+  ActiveSceneSynchronization: 1
+  SceneMigrationSynchronization: 0
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 3
---- !u!114 &2348555643583520211
+--- !u!114 &6976085557012315465
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4831303724150768939}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 003fb047202a03049b126430c495754d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SyncPositionX: 1

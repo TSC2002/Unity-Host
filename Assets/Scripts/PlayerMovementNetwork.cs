@@ -18,6 +18,17 @@ public class PlayerMovementNetwork : NetworkBehaviour
         if (Input.GetKey(KeyCode.A)) MoverDireccion.x = -1f;
         if (Input.GetKey(KeyCode.D)) MoverDireccion.x = 1f;
 
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            TestServerRpc();
+        }
+
         transform.Translate(MoverDireccion * MoveSpeed * Time.deltaTime);
+    }
+
+    [ServerRpc]
+    private void TestServerRpc()
+    {
+        Debug.Log("Test Server RPC");
     }
 }
