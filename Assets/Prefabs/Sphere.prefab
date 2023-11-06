@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3481414756953541866}
   - component: {fileID: 3776181598361574579}
   - component: {fileID: -7767356536688941075}
-  - component: {fileID: 8118177874404731301}
+  - component: {fileID: 349060290190620641}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -127,7 +127,7 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!54 &8118177874404731301
+--- !u!54 &349060290190620641
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
